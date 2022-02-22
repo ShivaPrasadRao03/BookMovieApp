@@ -36,6 +36,7 @@ TabContainer.propTypes = {
     children: PropTypes.node.isRequired
 }
 
+//Header component
 class Header extends Component {
 
     constructor(props) {
