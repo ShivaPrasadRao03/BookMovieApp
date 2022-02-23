@@ -47,10 +47,11 @@ class Details extends Component {
     }
 
     componentWillMount() {
-       
+        console.log("Base Url"+this.props.baseUrl);
 
         //To fetch all the artists
         fetch('http://localhost:3000/api/v1/movies/'+this.props.match.params.id, {
+           
             method: 'GET',
             headers: {
                 "Accept": "application/json",

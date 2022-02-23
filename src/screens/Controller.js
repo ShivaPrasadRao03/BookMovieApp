@@ -13,6 +13,7 @@ class Controller extends Component {
     super();
     this.baseUrl = "api/v1/";
   }
+  
   render() {
     return (
       <Router>

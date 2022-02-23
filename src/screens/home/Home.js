@@ -69,21 +69,7 @@ class Home extends Component {
     }
 
     componentDidMount() {
-        //To fetch all the movies which are published
-            fetch(this.props.baseUrl +'movies?status=PUBLISHED',{
-            method: 'GET',
-            headers: {
-                "Accept": "application/json",
-                'Content-Type': 'application/json'
-            }
-        })
-            .then(response => { return response.json(); })
-            .then(responseData => { console.log(responseData); return responseData; })
-            .then(data => { this.setState({ upcomingMovies: JSON.parse(JSON.stringify(data)).movies }); })
-
-            .catch(err => {
-                console.log("fetch error" + err);
-            });
+         
 
 
 
