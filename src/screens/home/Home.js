@@ -71,8 +71,6 @@ class Home extends Component {
     componentDidMount() {
          
 
-
-
         //To fetch all the movies which are released 
             fetch(this.props.baseUrl +'movies?status=RELEASED',{
 
